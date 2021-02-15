@@ -1,7 +1,12 @@
-{ "name": "www.iaean.net",
+{
+  "name": "www.iaean.net",
   "version": "0.7.1",
   "description": "iaean.NET via GitHub",
   "main": "index.html",
+  "license": "CC0-1.0",
+  "name": "iaean",
+  "url": "https://www.iaean.net/",
+  "private": true,
   "scripts": {},
   "repository": {
     "type": "git",
@@ -19,4 +24,6 @@
     "gulp-eslint": "^6.0.0",
     "gulp-htmlhint": "^4.0.0",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-terser": "^2.0.1" } }
+    "gulp-terser": "^2.0.1"
+  }
+}
