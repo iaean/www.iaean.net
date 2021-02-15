@@ -1,0 +1,22 @@
+{ "name": "www.iaean.net",
+  "version": "0.7.1",
+  "description": "iaean.NET via GitHub",
+  "main": "index.html",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iaean/www.iaean.net"
+  },
+  "author": "iaean",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-bump": "^3.2.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^4.0.1",
+    "gulp-csslint": "^1.0.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-htmlhint": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-terser": "^2.0.1" } }

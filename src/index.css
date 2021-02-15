@@ -1,0 +1,226 @@
+@font-face {
+  font-family: 'Jura', 'Recursive', sans-serif;
+  font-style: normal;
+  font-weight: normal }
+
+*, :before, :after {
+  box-sizing: inherit }
+
+html, div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box }
+ 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100% }
+ 
+body {
+  background: #000;
+  color: #4dff4d;
+  font-family: "Jura", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  text-align: center;
+  position: relative;
+  -webkit-text-size-adjust: 100% }
+ 
+a, a:link, a:visited, a:focus, a:active {
+  color: #eee;
+  outline: none;
+  text-decoration: none }
+a:hover {
+  color: #0F0;
+  outline: none;
+  text-decoration: none }
+
+section {
+  margin: 3em 0 }
+ 
+ul, ol {
+  padding-left: 1em }
+ 
+h1 {
+  font-size: 4rem;
+  letter-spacing: .5rem;
+  line-height: 1.25em }
+ 
+@media screen and (min-width: 60em) {
+  h1 {
+    font-size: 6rem
+  }
+}
+@media screen and (min-width: 80em) {
+  h1 {
+    font-size: 8rem
+  }
+}
+ 
+.hidden {
+  opacity: 0;
+  z-index: -1 }
+
+#matrix {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block }
+    
+#wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative }
+    
+#dumpTrigger {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  color: #eee;
+  font-size: 1rem;
+  line-height: 1.25em;
+  text-align: center;
+  z-index: 4000 }
+
+.dump {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  position: absolute;
+  width: 100%;
+  color: #eee;
+  font-size: 1.25rem;
+  bottom: 0;
+  display: block;
+  z-index: 5000;
+  padding: .5em .5em;
+  -webkit-transition: transform .2s ease-in;
+  -moz-transition: transform .2s ease-in;
+  -ms-transition: transform .2s ease-in;
+  -o-transition: transform .2s ease-in;
+  transition: transform .2s ease-in }
+    
+.dump.hidden {
+  transform: translateY(100%);
+  opacity: 1;
+  z-index: 4000 }
+    
+.dumpInner {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 .125em }
+
+.dumpInnerRow {
+  float: left;
+  width: 100%;
+  padding: .5em .5em;
+  border: thin solid #ffdf00;
+  -moz-border-radius: 1em/1em;
+  border-radius: 1em/1em;
+  background-color: rgba(0,0,0,0.66) }
+    
+@media screen and (min-width: 40em) {
+  .dumpWrapper {
+    float: left;
+    width: 100%;
+    padding-bottom: 2em
+  }
+}
+
+.avatar {
+  border: medium solid #ffdf00;
+  border-radius: 50%;
+  background-repeat: no-repeat; 
+  background-position: center center;
+  background-size: cover;
+  background-image: url('avatar.jpg');
+  height: 64px;
+  width: 64px;
+  margin: 2em auto auto;
+  align-items: center;
+  justify-content: center }
+    
+.return, .footer {
+  margin-top: 3em;
+  text-align: center }
+    
+.messageBox {
+  //background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #eee;
+  font-size: 1.25rem;
+  z-index: 3150;
+  -webkit-transition: opacity 3s;
+  -moz-transition: opacity 3s;
+  -ms-transition: opacity 3s;
+  -o-transition: opacity 3s;
+  transition: opacity 3s;
+  display: flex;
+  align-items: center;
+  justify-content: center }
+    
+@media screen and (min-width: 60em) {
+  .messageBox {
+    font-size: 1.3rem
+  }
+}
+    
+.messageBox.hidden {
+  z-index: 3150 }
+    
+.messageBoxInner {
+  background: rgba(0, 0, 0, 0.5);
+  max-width: 65rem;
+  padding: 0.5em 1.0em;
+  margin: 0 auto;
+  mix-blend-mode: hard-light }
+    
+#music {
+  position: absolute;
+  top: -5em;
+  z-index: -2 }
+
+.hex {
+  cursor:default;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative }
+
+pre {
+  font-family: "Recursive", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10pt;
+  line-height: 12pt;
+  height: 144pt;
+  color:#f0f0f0;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+  padding: 0;
+  margin: 0 }
+
+pre>b {
+  color: #0f0;
+  background: #000;
+  position: relative }
+pre>b>a, pre>b>a:link, pre>b>a:visited, pre>b>a:focus, pre>b>a:active {
+  background: #000;
+  color: #0f0;
+  outline: none;
+  text-decoration: none }
+pre>b>a:hover {
+  background: rgba(0,0,0,0.7);
+  outline: none;
+  text-decoration: none;
+  border: 2px solid #F00;
+  margin: -14px;
+  padding: 12px;
+  -moz-border-radius: .5em/.5em;
+  border-radius: .5em/.5em;
+  position: relative;
+  z-index: 1 }
