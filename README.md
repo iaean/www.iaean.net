@@ -24,7 +24,7 @@ gulp clean     # remove build dir
 
 - [ ] Adapt to small mobile displays
 - [ ] Provide public keys inside app
-- [ ] Provide Ancestry and Fun stuff maybe via [Blocks][2]
+- [x] Provide Ancestry and Fun stuff maybe via [Blocks][2]
 - [ ] Feed sayings and citations from a service
 - [ ] Let clickable URLs rain instead of random chars
 
